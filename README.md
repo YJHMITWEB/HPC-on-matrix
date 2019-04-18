@@ -7,6 +7,7 @@
   * Intel Core I7 4720HQ (4 cores, 8 threads)  
   * 8G memory, 1.6GHz  
 * Implemented Matrix Multiply(MM):  
+
   |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    |   Time       |       Validation   |      speed-up|
   |-----------------|-------------|-------------|----------------|--------------|--------------------|-----------|
   |CPU serial:      |    off-OMP   |  off-chunk  |   off-SSE/AVX  |  2771.54ms  |    validation-pass   |        1x  |
