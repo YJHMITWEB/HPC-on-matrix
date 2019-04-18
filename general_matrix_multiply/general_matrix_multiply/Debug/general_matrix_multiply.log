@@ -1,0 +1,9 @@
+﻿  Odessy.cpp
+  data_generator.cpp
+  cpu.cpp
+d:\hpc\poscea\general_matrix_mul\general_matrix_multiply\general_matrix_multiply\cpu.cpp(22): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\general_matrix_mul\general_matrix_multiply\general_matrix_multiply\cpu.cpp(24): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\general_matrix_mul\general_matrix_multiply\general_matrix_multiply\cpu.cpp(30): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+  正在生成代码...
+  general_matrix_multiply.vcxproj -> D:\HPC\POSCEA\General_Matrix_Mul\general_matrix_multiply\Debug\general_matrix_multiply.exe
+  general_matrix_multiply.vcxproj -> D:\HPC\POSCEA\General_Matrix_Mul\general_matrix_multiply\Debug\general_matrix_multiply.pdb (Partial PDB)

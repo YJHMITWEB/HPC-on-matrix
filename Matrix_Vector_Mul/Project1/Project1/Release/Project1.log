@@ -1,0 +1,16 @@
+﻿  源.cpp
+c1xx : warning C4199: C++/CLI、C++/CX 或 OpenMP 不支持两阶段名称查找；请使用 /Zc:twoPhase-
+d:\hpc\poscea\matrix_vector_mul\project1\project1\源.cpp(150): warning C4326: “main”的返回类型应为“int”而非“void”
+d:\hpc\poscea\matrix_vector_mul\project1\project1\源.cpp(165): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\matrix_vector_mul\project1\project1\源.cpp(167): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\matrix_vector_mul\project1\project1\源.cpp(172): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\matrix_vector_mul\project1\project1\源.cpp(179): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\matrix_vector_mul\project1\project1\源.cpp(184): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\matrix_vector_mul\project1\project1\源.cpp(188): warning C4129: “%”: 不可识别的字符转义序列
+d:\hpc\poscea\matrix_vector_mul\project1\project1\源.cpp(188): warning C4778: “printf”: 格式字符串“%\n”未终止
+  正在生成代码
+  4 of 12 functions (33.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  Project1.vcxproj -> D:\HPC\POSCEA\Matrix_Vector_Mul\Project1\Release\Project1.exe
