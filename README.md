@@ -4,7 +4,7 @@
 * Environment:  
   * Windows 10  
   * VS2017 Release x64  
-  * Intel Core I7 4720HQ (4 cores, 8 threads)  
+  * Intel Core i7 4720HQ (4 cores, 8 threads)  
   * 8G memory, 1.6GHz  
 * Implemented Matrix Multiply(MM):  
 
