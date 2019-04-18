@@ -19,8 +19,8 @@
     
 * General settings:  
   
-  * Matrix1 \* Matrix2: (1024, 1024) \* (1024, 1024)  
-  * chunk size: 64\*64 elements  
+  * Size of Matrix1 \* Matrix2: (1024, 1024) \* (1024, 1024)  
+  * Chunk size: 64\*64 elements  
   * OMP threads: 8  
   * AVX SIMD parallel: 8\*float(32 bits)  
   * AVX parallel in chunk: 2 rows (depends on how many AVX registers on the machine)  
