@@ -8,14 +8,14 @@
   * 8G memory, 1.6GHz  
 * Implemented Matrix Multiply(MM):  
 
-  |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    |   Time       |       Validation   |      speed-up|
+  |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    |   Time(ms)      |       Validation   |      speed-up|
   |-----------------|-------------|-------------|----------------|--------------|--------------------|-----------|
-  |CPU serial:      |       |  off-chunk  |   off-SSE/AVX  |  2771.54ms  |    validation-pass   |        1x  |
-  |CPU chunk-serial:   |    |  on-chunk   |   off-SSE/AVX  |   936.43ms   |   validation-pass   |     2.96x  |
-  |CPU omp:        |     ✔  |    off-chunk  |   off-SSE/AVX |   1562.25ms  |    validation-pass  |      1.77x  |
-  |CPU chunk-omp:    |   on    |  on-chunk   |   off-SSE/AVX |    176.31ms  |    validation-pass  |     15.72x  |
-  |CPU chunk-avx:    |   off   |  on-chunk   |   on-SSE/AVX  |    182.70ms   |   validation-pass   |    15.17x  |
-  |CPU chunk-avx-omp:  | on   |   on-chunk   |   on-SSE/AVX  |     44.61ms  |    validation-pass  |     62.13x  |
+  |CPU serial:      |       |  off-chunk  |   off-SSE/AVX  |  2771.54  |    pass   |        1x  |
+  |CPU chunk-serial:   |    |  ✔   |   off-SSE/AVX  |   936.43   |   pass   |     2.96x  |
+  |CPU omp:        |     ✔  |    off-chunk  |   off-SSE/AVX |   1562.25  |    pass  |      1.77x  |
+  |CPU chunk-omp:    |   ✔    |  ✔   |   off-SSE/AVX |    176.31  |    pass  |     15.72x  |
+  |CPU chunk-avx:    |      | ✔   |   ✔  |    182.70   |   pass   |    15.17x  |
+  |CPU chunk-avx-omp:  | ✔   |   ✔   |   ✔  |     44.61  |    pass  |     62.13x  |
     
 * General settings:  
   
