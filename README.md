@@ -1,4 +1,4 @@
-# HPC-on-statistics-and-matrix
+# HPC-on-matrix
 * General Matrix Multiply:  
   * Main Extrance: Odessy.cpp  
 * Environment:  
