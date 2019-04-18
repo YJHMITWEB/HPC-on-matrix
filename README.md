@@ -23,4 +23,4 @@
   * chunk size: 64\*64 elements  
   * OMP threads: 8  
   * AVX SIMD parallel: 8\*float(32 bits)  
-  * AVX parallel on Matrix: 2 rows (depends on how many AVX registers on the machine)  
+  * AVX parallel in chunk: 2 rows (depends on how many AVX registers on the machine)  
