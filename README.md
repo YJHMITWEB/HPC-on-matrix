@@ -10,12 +10,12 @@
 
   |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    |   Time       |       Validation   |      speed-up|
   |-----------------|-------------|-------------|----------------|--------------|--------------------|-----------|
-  |CPU serial:      |    off-OMP   |  off-chunk  |   off-SSE/AVX  |  2771.54ms  |    validation-pass   |        1x  |
-  |CPU chunk-serial:   | off-OMP   |  on-chunk   |   off-SSE/AVX  |   936.43ms   |   validation-pass   |     2.96x  |
-  |CPU omp:        |     on-OMP  |    off-chunk  |   off-SSE/AVX |   1562.25ms  |    validation-pass  |      1.77x  |
-  |CPU chunk-omp:    |   on-OMP    |  on-chunk   |   off-SSE/AVX |    176.31ms  |    validation-pass  |     15.72x  |
-  |CPU chunk-avx:    |   off-OMP   |  on-chunk   |   on-SSE/AVX  |    182.70ms   |   validation-pass   |    15.17x  |
-  |CPU chunk-avx-omp:  | on-OMP   |   on-chunk   |   on-SSE/AVX  |     44.61ms  |    validation-pass  |     62.13x  |
+  |CPU serial:      |       |  off-chunk  |   off-SSE/AVX  |  2771.54ms  |    validation-pass   |        1x  |
+  |CPU chunk-serial:   |    |  on-chunk   |   off-SSE/AVX  |   936.43ms   |   validation-pass   |     2.96x  |
+  |CPU omp:        |     ✔  |    off-chunk  |   off-SSE/AVX |   1562.25ms  |    validation-pass  |      1.77x  |
+  |CPU chunk-omp:    |   on    |  on-chunk   |   off-SSE/AVX |    176.31ms  |    validation-pass  |     15.72x  |
+  |CPU chunk-avx:    |   off   |  on-chunk   |   on-SSE/AVX  |    182.70ms   |   validation-pass   |    15.17x  |
+  |CPU chunk-avx-omp:  | on   |   on-chunk   |   on-SSE/AVX  |     44.61ms  |    validation-pass  |     62.13x  |
     
 * General settings:  
   
