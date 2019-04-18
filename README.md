@@ -10,10 +10,10 @@
 
   |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    |   Time(ms)      |       Validation   |      speed-up|
   |-----------------|-------------|-------------|----------------|--------------|--------------------|-----------|
-  |CPU serial:      |       |  off-chunk  |   off-SSE/AVX  |  2771.54  |    pass   |        1x  |
-  |CPU chunk-serial:   |    |  ✔   |   off-SSE/AVX  |   936.43   |   pass   |     2.96x  |
-  |CPU omp:        |     ✔  |    off-chunk  |   off-SSE/AVX |   1562.25  |    pass  |      1.77x  |
-  |CPU chunk-omp:    |   ✔    |  ✔   |   off-SSE/AVX |    176.31  |    pass  |     15.72x  |
+  |CPU serial:      |       |    |     |  2771.54  |    pass   |        1x  |
+  |CPU chunk-serial:   |    |  ✔   |     |   936.43   |   pass   |     2.96x  |
+  |CPU omp:        |     ✔  |     |   |   1562.25  |    pass  |      1.77x  |
+  |CPU chunk-omp:    |   ✔    |  ✔   |    |    176.31  |    pass  |     15.72x  |
   |CPU chunk-avx:    |      | ✔   |   ✔  |    182.70   |   pass   |    15.17x  |
   |CPU chunk-avx-omp:  | ✔   |   ✔   |   ✔  |     44.61  |    pass  |     62.13x  |
     
