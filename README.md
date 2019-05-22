@@ -18,10 +18,10 @@
   |CPU chunk-omp:    |   ✔    |  ✔   |   |       |    176.31  |    pass  |     15.72x  |
   |CPU chunk-avx:    |      | ✔   |   ✔  |      |    182.70   |   pass   |    15.17x  |
   |CPU chunk-avx-omp:  | ✔   |   ✔   |   ✔ | |     44.61  |    pass  |     62.13x  |
-  |GPU AB:         |          |      |      |      |     ✔      |35.14 | pass | 78.87x|
-  |GPU ABT:         |          |      |      |      |     ✔      |168.00 | pass | 16.50x|
-  |GPU ATB:         |          |      |      |      |     ✔      |32.61 | pass | 85.00x|
-  |GPU AB (shared memory):         |          |      |      |      |     ✔      |24.00 | pass | 115.48x|
+  |GPU AB:         |          |      |           |     ✔      |35.14 | pass | 78.87x|
+  |GPU ABT:         |          |      |            |     ✔      |168.00 | pass | 16.50x|
+  |GPU ATB:         |          |      |            |     ✔      |32.61 | pass | 85.00x|
+  |GPU AB (shared memory):         |               |      |      |     ✔      |24.00 | pass | 115.48x|
 
 * General settings:  
   
