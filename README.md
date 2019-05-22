@@ -22,7 +22,7 @@
   |GPU ABT:         |          |      |      |      |     ✔      |168.00 | pass | 16.50x|
   |GPU ATB:         |          |      |      |      |     ✔      |32.61 | pass | 85.00x|
   |GPU AB (shared memory):         |          |      |      |      |     ✔      |24.00 | pass | 115.48x|
-    
+
 * General settings:  
   
   * Size of Matrix1 \* Matrix2: (1024, 1024) \* (1024, 1024)  
