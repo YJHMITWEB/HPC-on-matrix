@@ -1,5 +1,5 @@
 # HPC-on-matrix:
-Contains matrix multiplying, 2D convolution computing, and 3D Stencil computing.
+The purpose of this project is to show how high performance computing, which is also perceived as parallel computing, distributed computing or heterogeneous computing, could accelerate very common algorithms in nowadays Artificial Intelligence. Contains matrix multiplying, 2D convolution computing, and 3D Stencil computing.
 ## Matrix Multiply
 * General Matrix Multiply:  
   * Main Entrance: Odessy.cpp  
