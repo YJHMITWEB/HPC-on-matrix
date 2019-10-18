@@ -1,7 +1,7 @@
-# HPC-on-matrix
-## General Matrix Multiply:  
-  ** Main Entrance: Odessy.cpp  
-  ** GPU Main Entrance: GPN/../Odessy_G.cpp
+# HPC-on-matrix:Matrix Multiply
+* General Matrix Multiply:  
+  * Main Entrance: Odessy.cpp  
+  * GPU Main Entrance: GPN/../Odessy_G.cpp
 * Environment:  
   * Windows 10  
   * VS2017 Release x64  
@@ -32,4 +32,25 @@
   * AVX SIMD parallel: 8\*float(32 bits)  
   * AVX parallel in chunk: 2 rows (depends on how many AVX registers on the machine)  
   * CUDA: Block(32, 32)
-# 
+# HPC-on-matrix: 3D Stencil computing
+* General Matrix Multiply:  
+  * Main Entrance: Odessy.cpp
+  
+* Environment:  
+  * Windows 10  
+  * VS2017 Release x64  
+  * Intel Core i7 4720HQ (4 cores, 8 threads)  
+  * 8G memory, 1.6GHz  
+  * GTX 960M, 640 cu
+  
+* Implemented 3D Stencil computing:  
+|  Methods          |   OpenMP        |   CUDA      | Time(ms)         |       Validation |      speed-up  |
+|-----------------  |:---------------:|:-----------:|:----------------:|:----------------:|:--------------:|
+|CPU serial:        |                 |             |3222.1            |  pass            | 1x             |
+|GPU:               |                 |     ✔       |71.04            |  pass            | 45.36x             |
+* General settings:  
+  
+  * Size of Tensor: (512, 512, 512)
+  * Stencil radius: 6  
+  * Kernel size: 13  
+  * CUDA: Block(32, 32)
