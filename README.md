@@ -1,7 +1,7 @@
 # HPC-on-matrix
-* General Matrix Multiply:  
-  * Main Entrance: Odessy.cpp  
-  * GPU Main Entrance: GPN/../Odessy_G.cpp
+## General Matrix Multiply:  
+  ** Main Entrance: Odessy.cpp  
+  ** GPU Main Entrance: GPN/../Odessy_G.cpp
 * Environment:  
   * Windows 10  
   * VS2017 Release x64  
@@ -32,3 +32,4 @@
   * AVX SIMD parallel: 8\*float(32 bits)  
   * AVX parallel in chunk: 2 rows (depends on how many AVX registers on the machine)  
   * CUDA: Block(32, 32)
+# 
