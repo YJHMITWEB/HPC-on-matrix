@@ -1,4 +1,5 @@
 # HPC-on-matrix:
+Contains matrix multiplying, 2D convolution computing, and 3D Stencil computing.
 ## Matrix Multiply
 * General Matrix Multiply:  
   * Main Entrance: Odessy.cpp  
@@ -45,10 +46,12 @@
   * GTX 960M, 640 cu
   
 * Implemented 3D Stencil computing:  
+
 |  Methods          |   OpenMP        |   CUDA      | Time(ms)         |       Validation |      speed-up  |
 |-----------------  |:---------------:|:-----------:|:----------------:|:----------------:|:--------------:|
 |CPU serial:        |                 |             |3222.1            |  pass            | 1x             |
 |GPU:               |                 |     ✔       |71.04            |  pass            | 45.36x             |
+
 * General settings:  
   
   * Size of Tensor: (512, 512, 512)
