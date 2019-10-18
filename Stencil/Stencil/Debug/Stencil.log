@@ -1,0 +1,9 @@
+﻿  Odessy.cpp
+  data_brew.cpp
+  cpu.cpp
+d:\hpc\poscea\stencil\stencil\cpu.cpp(18): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\stencil\stencil\cpu.cpp(20): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\stencil\stencil\cpu.cpp(25): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+  正在生成代码...
+  Stencil.vcxproj -> D:\HPC\POSCEA\Stencil\Debug\Stencil.exe
+  Stencil.vcxproj -> D:\HPC\POSCEA\Stencil\Debug\Stencil.pdb (Partial PDB)
