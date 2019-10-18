@@ -1,4 +1,5 @@
-# HPC-on-matrix:Matrix Multiply
+# HPC-on-matrix:
+## Matrix Multiply
 * General Matrix Multiply:  
   * Main Entrance: Odessy.cpp  
   * GPU Main Entrance: GPN/../Odessy_G.cpp
@@ -32,7 +33,7 @@
   * AVX SIMD parallel: 8\*float(32 bits)  
   * AVX parallel in chunk: 2 rows (depends on how many AVX registers on the machine)  
   * CUDA: Block(32, 32)
-# HPC-on-matrix: 3D Stencil computing
+## HPC-on-matrix: 3D Stencil computing
 * General Matrix Multiply:  
   * Main Entrance: Odessy.cpp
   
