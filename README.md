@@ -7,7 +7,7 @@ The purpose of this project is to show how high performance computing, which is 
 * Environment:  
   * Windows 10  
   * VS2017 Release x64  
-  * Intel Core i7 4720HQ (4 cores, 8 threads)  
+  * Intel Core i7 4720HQ (4 cores, 8 threads, L1c = 128 KB, L2c = 1024 KB, L3c = 6144 KB)  
   * 8G memory, 1.6GHz  
   * GTX 960M, 640 cu
 * Implemented Matrix Multiply(MM):  
@@ -42,7 +42,7 @@ The purpose of this project is to show how high performance computing, which is 
 * Environment:  
   * Windows 10  
   * VS2017 Release x64  
-  * Intel Core i7 4720HQ (4 cores, 8 threads)  
+  * Intel Core i7 4720HQ (4 cores, 8 threads, L1c = 128 KB, L2c = 1024 KB, L3c = 6144 KB)  
   * 8G memory, 1.6GHz  
   * GTX 960M, 640 cu
   
