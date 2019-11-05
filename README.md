@@ -12,18 +12,19 @@ The purpose of this project is to show how high performance computing, which is 
   * GTX 960M, 640 cu
 * Implemented Matrix Multiply(MM):  
 
-  |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    | CUDA |   Time(ms)      |       Validation   |      speed-up|
-  |-----------------|:-------------:|:-------------:|:----------------:|:----------------:|:--------------:|:--------------------:|:-----------:|
-  |CPU serial:      |       |    |     |      |  2771.54  |    pass   |        1x  |
-  |CPU chunk-serial:   |    |  ✔   |    | |   936.43   |   pass   |     2.96x  |
-  |CPU omp:        |     ✔  |     |   |      |   1562.25  |    pass  |      1.77x  |
-  |CPU chunk-omp:    |   ✔    |  ✔   |   |       |    176.31  |    pass  |     15.72x  |
-  |CPU chunk-avx:    |      | ✔   |   ✔  |      |    182.70   |   pass   |    15.17x  |
-  |CPU chunk-avx-omp:  | ✔   |   ✔   |   ✔ | |     44.61  |    pass  |     62.13x  |
-  |GPU AB:         |          |      |           |     ✔      |35.14 | pass | 78.87x|
-  |GPU ABT:         |          |      |            |     ✔      |168.00 | pass | 16.50x|
-  |GPU ATB:         |          |      |            |     ✔      |32.61 | pass | 85.00x|
-  |GPU AB (shared memory):         |               |      |      |     ✔      |24.00 | pass | 115.48x|
+  |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    | CUDA |NEON|   Time(ms)      |       Validation   |      speed-up|  % of peak performance
+  |-----------------|:-------------:|:-------------:|:--------------:|:--:|:----------------:|:--------------:|:--------------------:|:-----------:|:----------:|
+  |CPU serial:      |       |    |     |     |  |  2771.54  |    pass   |        1x  | |
+  |CPU chunk-serial:   |    |  ✔   |    |  ||   936.43   |   pass   |     2.96x  |
+  |CPU omp:        |     ✔  |     |   |  |     |   1562.25  |    pass  |      1.77x   ||
+  |CPU chunk-omp:    |   ✔    |  ✔   |   |        ||    176.31  |    pass  |     15.72x  | |
+  |CPU chunk-avx:    |      | ✔   |   ✔  |       ||    182.70   |   pass   |    15.17x  | |
+  |CPU chunk-avx-omp:  | ✔   |   ✔   |   ✔ |  ||     44.61  |    pass  |     62.13x  | |
+  |GPU AB:         |          |      |           |     ✔      | |35.14 | pass | 78.87x ||
+  |GPU ABT:         |          |      |            |     ✔      | |168.00 | pass | 16.50x ||
+  |GPU ATB:         |          |      |            |     ✔      | |32.61 | pass | 85.00x ||
+  |GPU AB (shared memory):         |               |      |      |     ✔    |   |24.00 | pass | 115.48x ||
+  |ARM A15 (L1 Cache Tiling):         |               |      |      |         |   ✔  |24.00 | pass | 115.48x |74.56|
 
 
 * General settings:  
