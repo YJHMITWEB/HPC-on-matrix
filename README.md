@@ -50,8 +50,8 @@ The purpose of this project is to show how high performance computing, which is 
 
 |  Methods          |   OpenMP        |   CUDA      | Time(ms)         |       Validation |      speed-up  | GFlops
 |-----------------  |:---------------:|:-----------:|:----------------:|:----------------:|:--------------:|:--::|
-|CPU serial:        |                 |             |3222.1            |  pass            | 1x             | 
-|GPU:               |                 |     ✔       |71.04            |  pass            | 45.36x             |117.5
+|CPU serial:        |                 |             |3222.1            |  pass            | 1x             | |
+|GPU:               |                 |     ✔       |71.04            |  pass            | 45.36x             |117.5|
 
 * General settings:  
   
