@@ -24,7 +24,7 @@ The purpose of this project is to show how high performance computing, which is 
   |GPU ABT:         |          |      |            |     ✔      | |168.00 | pass | 16.50x ||
   |GPU ATB:         |          |      |            |     ✔      | |32.61 | pass | 85.00x ||
   |GPU AB (shared memory):         |               |      |      |     ✔    |   |24.00 | pass | 115.48x ||
-  |ARM A15 (L1 Cache Tiling):         |               |    ✔    |      |         |   ✔  |24.00 | pass | 115.48x |74.56|
+  |ARM A15 (L1 Cache Tiling):         |               |    ✔    |      |         |   ✔  | | pass ||74.56|
 
 
 * General settings:  
