@@ -59,3 +59,6 @@ The purpose of this project is to show how high performance computing, which is 
   * Stencil radius: 6  
   * Kernel size: 13  
   * CUDA: Block(32, 32)
+* Reference:
+
+  * [3D Finite Difference Computation on GPUs using CUDA, Paulius Micikevicius, NVIDIA](https://developer.download.nvidia.com/CUDA/CUDA_Zone/papers/gpu_3dfd_rev.pdf)
