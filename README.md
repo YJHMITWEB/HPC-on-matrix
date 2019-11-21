@@ -14,8 +14,8 @@ The purpose of this project is to show how high performance computing, which is 
 
   |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    | CUDA |NEON|   Time(ms)      |       Validation   |      speed-up|  % of peak performance
   |-----------------|:-------------:|:-------------:|:--------------:|:--:|:----------------:|:--------------:|:--------------------:|:-----------:|:----------:|
-  |CPU serial:      |       |    |     |     |  |  2771.54  |    pass   |        1x  | |
-  |CPU chunk-serial:   |    |  ✔   |    |  ||   936.43   |   pass   |     2.96x  |
+  |CPU sequential:      |       |    |     |     |  |  2771.54  |    pass   |        1x  | |
+  |CPU chunk-sequential:   |    |  ✔   |    |  ||   936.43   |   pass   |     2.96x  |
   |CPU omp:        |     ✔  |     |   |  |     |   1562.25  |    pass  |      1.77x   ||
   |CPU chunk-omp:    |   ✔    |  ✔   |   |        ||    176.31  |    pass  |     15.72x  | |
   |CPU chunk-avx:    |      | ✔   |   ✔  |       ||    182.70   |   pass   |    15.17x  | |
@@ -50,7 +50,7 @@ The purpose of this project is to show how high performance computing, which is 
 
 |  Methods          |   OpenMP        |   CUDA      | Time(ms)         |       Validation |      speed-up  | GFlops|
 |-----------------  |:---------------:|:-----------:|:----------------:|:----------------:|:--------------:|:--:|
-|CPU serial:        |                 |             |3222.1            |  pass            | 1x             | |
+|CPU sequential:        |                 |             |3222.1            |  pass            | 1x             | |
 |GPU:               |                 |     ✔       |71.04            |  pass            | 45.36x             |117.5|
 
 * General settings:  
@@ -62,3 +62,7 @@ The purpose of this project is to show how high performance computing, which is 
 * Reference:
 
   * [3D Finite Difference Computation on GPUs using CUDA, Paulius Micikevicius, NVIDIA](https://developer.download.nvidia.com/CUDA/CUDA_Zone/papers/gpu_3dfd_rev.pdf)
+
+* X86 CPU's dilemma:
+ * 3D Stencil requires accessing data on three dimensions consecutively, however, the cache on X86 is one dimensional. Let's see what happens when doing 3D tiling on L1 cache. Given that X86's L1 cache size is 32KB, 8 * 1024 32-bit-float values could be stored. If using 3D cublic tiling, the length of each dimension is 16. Then, we do 3D tiling again on L2 cache. Given that X86's L2 cache size is 256KB, if using 3D cublic tiling, the length of each dimension is 32. Here comes that problem --- the length of cache line on X86 is 64 Bytes, therefore hardware pre-fetching cannot be used properly, which may even cause negative effects on performance. 
+ * Considering cache tiling, no matter do it on L1 or L2, the tile size will be too small to exploit the capacity of X86 cache hierarchy, which is why in any 3D Stencil implementation on X86 will always be limited by L3 cache and RAM's performance.
