@@ -1,0 +1,12 @@
+﻿  Odessy.cpp
+d:\hpc\poscea\2d_convolution\2d_convolution\config.h(23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  cpu.cpp
+d:\hpc\poscea\2d_convolution\2d_convolution\config.h(23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\hpc\poscea\2d_convolution\2d_convolution\cpu.cpp(44): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\2d_convolution\2d_convolution\cpu.cpp(46): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\2d_convolution\2d_convolution\cpu.cpp(51): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\2d_convolution\2d_convolution\cpu.cpp(61): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  data_generator.cpp
+d:\hpc\poscea\2d_convolution\2d_convolution\config.h(23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  正在生成代码...
+  2D_Convolution.vcxproj -> D:\HPC\POSCEA\2D_Convolution\Debug\2D_Convolution.exe

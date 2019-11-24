@@ -1,0 +1,15 @@
+﻿  Odessy.cpp
+c1xx : warning C4199: C++/CLI、C++/CX 或 OpenMP 不支持两阶段名称查找；请使用 /Zc:twoPhase-
+d:\hpc\poscea\2d_convolution\2d_convolution\config.h(23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  cpu.cpp
+c1xx : warning C4199: C++/CLI、C++/CX 或 OpenMP 不支持两阶段名称查找；请使用 /Zc:twoPhase-
+d:\hpc\poscea\2d_convolution\2d_convolution\config.h(23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\hpc\poscea\2d_convolution\2d_convolution\cpu.cpp(45): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\2d_convolution\2d_convolution\cpu.cpp(47): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\2d_convolution\2d_convolution\cpu.cpp(52): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+d:\hpc\poscea\2d_convolution\2d_convolution\cpu.cpp(62): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  data_generator.cpp
+c1xx : warning C4199: C++/CLI、C++/CX 或 OpenMP 不支持两阶段名称查找；请使用 /Zc:twoPhase-
+d:\hpc\poscea\2d_convolution\2d_convolution\config.h(23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  正在生成代码...
+  2D_Convolution.vcxproj -> D:\HPC\POSCEA\2D_Convolution\x64\Debug\2D_Convolution.exe

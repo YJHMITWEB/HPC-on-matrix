@@ -1,0 +1,17 @@
+﻿  Odessy.cpp
+d:\hpc\poscea\2d_convolution\2d_convolution\config.h(23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  cpu.cpp
+d:\hpc\poscea\2d_convolution\2d_convolution\config.h(23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+cpu.cpp(45): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+cpu.cpp(47): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+cpu.cpp(52): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+cpu.cpp(62): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  data_generator.cpp
+d:\hpc\poscea\2d_convolution\2d_convolution\config.h(23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  正在生成代码
+  11 of 110 functions (10.0%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  2D_Convolution.vcxproj -> D:\HPC\POSCEA\2D_Convolution\x64\Release\2D_Convolution.exe
+  2D_Convolution.vcxproj -> D:\HPC\POSCEA\2D_Convolution\x64\Release\2D_Convolution.pdb (Full PDB)
