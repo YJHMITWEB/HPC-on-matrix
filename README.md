@@ -6,7 +6,7 @@ The purpose of this project is to show how high performance computing, which is 
   * GPU Main Entrance: GPN/../Odessy_G.cpp
 * Environment:  
   * Windows 10  
-  * VS2017 Release x64  
+  * VS2017 Release x64 (disable all auto-optimization)
   * Intel Core i7 4720HQ (4 cores, 8 threads, L1c = 128 KB, L2c = 1024 KB, L3c = 6144 KB)  
   * 8G memory, 1.6GHz  
   * GTX 960M, 640 cu
@@ -14,16 +14,16 @@ The purpose of this project is to show how high performance computing, which is 
 
   |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    | CUDA |NEON|   Time(ms)      |       Validation   |      speed-up|  % of peak performance
   |-----------------|:-------------:|:-------------:|:--------------:|:--:|:----------------:|:--------------:|:--------------------:|:-----------:|:----------:|
-  |CPU sequential:      |       |    |     |     |  |  2771.54  |    pass   |        1x  | |
-  |CPU chunk-sequential:   |    |  ✔   |    |  ||   936.43   |   pass   |     2.96x  |
-  |CPU omp:        |     ✔  |     |   |  |     |   1562.25  |    pass  |      1.77x   ||
-  |CPU chunk-omp:    |   ✔    |  ✔   |   |        ||    176.31  |    pass  |     15.72x  | |
-  |CPU chunk-avx:    |      | ✔   |   ✔  |       ||    182.70   |   pass   |    15.17x  | |
-  |CPU chunk-avx-omp:  | ✔   |   ✔   |   ✔ |  ||     44.61  |    pass  |     62.13x  | |
-  |GPU AB:         |          |      |           |     ✔      | |35.14 | pass | 78.87x ||
-  |GPU ABT:         |          |      |            |     ✔      | |168.00 | pass | 16.50x ||
-  |GPU ATB:         |          |      |            |     ✔      | |32.61 | pass | 85.00x ||
-  |GPU AB (shared memory):         |               |      |      |     ✔    |   |24.00 | pass | 115.48x ||
+  |CPU sequential:      |       |    |     |     |  |  10757.1  |    pass   |        1x  | |
+  |CPU chunk-sequential:   |    |  ✔   |    |  ||   4464.14   |   pass   |     2.41x  |
+  |CPU omp:        |     ✔  |     |   |  |     |   2307.25  |    pass  |      4.66x   ||
+  |CPU chunk-omp:    |   ✔    |  ✔   |   |        ||    1487.28  |    pass  |     7.23x  | |
+  |CPU chunk-avx:    |      | ✔   |   ✔  |       ||    978.398   |   pass   |    10.99x  | |
+  |CPU chunk-avx-omp:  | ✔   |   ✔   |   ✔ |  ||    270.828 |    pass  |     39.72x  | |
+  |GPU AB:         |          |      |           |     ✔      | |32.91 | pass | 326.86x ||
+  |GPU ABT:         |          |      |            |     ✔      | |166.89 | pass | 64.46x ||
+  |GPU ATB:         |          |      |            |     ✔      | |31.74 | pass | 338.91x ||
+  |GPU AB (shared memory):         |               |      |      |     ✔    |   |20.80 | pass | 517.17x ||
   |ARM A15 (L1 Cache Tiling):         |               |    ✔    |      |         |   ✔  | | pass ||70.56|
 
 
@@ -41,17 +41,17 @@ The purpose of this project is to show how high performance computing, which is 
   
 * Environment:  
   * Windows 10  
-  * VS2017 Release x64  
+  * VS2017 Release x64 (disable all auto-optimization)
   * Intel Core i7 4720HQ (4 cores, 8 threads, L1c = 128 KB, L2c = 1024 KB, L3c = 6144 KB)  
   * 8G memory, 1.6GHz  
   * GTX 960M, 640 cu
   
 * Implemented 3D Stencil computing:  
 
-|  Methods          |   OpenMP        |   CUDA      | Time(ms)         |       Validation |      speed-up  | GFlops|
-|-----------------  |:---------------:|:-----------:|:----------------:|:----------------:|:--------------:|:--:|
-|CPU sequential:        |                 |             |3222.1            |  pass            | 1x             | |
-|GPU:               |                 |     ✔       |71.04            |  pass            | 45.36x             |117.5|
+|  Methods          |   OpenMP        |   CUDA      | Time(ms)         |       Validation |      speed-up  | 
+|-----------------  |:---------------:|:-----------:|:----------------:|:----------------:|:--------------:|
+|CPU sequential:        |                 |             |11352            |  pass            | 1x             | 
+|GPU:               |                 |     ✔       |70.47            |  pass            | 161.09x             |
 
 * General settings:  
   
