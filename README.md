@@ -70,3 +70,34 @@ The purpose of this project is to show how high performance computing, which is 
    * Considering cache tiling, no matter doing it on L1 or L2, the tile size will be too small to exploit the capacity of X86 cache hierarchy, which is why in any 3D Stencil implementation on X86 will always be limited by L3 cache and RAM's performance.
    
    * This problem will happen again on NVIDIA GPU if trying to store 3D data on shared memory. A way to solve it is on above reference, and my code shows exactly how to do.
+
+## HPC-on-matrix: 2D Convolution
+* 2D Convolution:  
+  * Main Entrance: Odessy.cpp
+  
+* Environment:  
+  * Windows 10  
+  * VS2017 Release x64 (disable all auto-optimization)
+  * Intel Core i7 4720HQ (4 cores, 8 threads, L1c = 128 KB, L2c = 1024 KB, L3c = 6144 KB)  
+  * 8G memory, 1.6GHz  
+  * GTX 960M, 640 cu
+  
+* Implemented 2D Convolution:  
+
+  |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    | CUDA |NEON|   Time(ms)      |       Validation   |      speed-up|  % of peak performance
+  |-----------------|:-------------:|:-------------:|:--------------:|:--:|:----------------:|:--------------:|:--------------------:|:-----------:|:----------:|
+  |CPU sequential:      |       |    |     |     |  |  1459.82  |    pass   |        1x  | |
+  |CPU sequential-loop-unroll:   |    |     |    |  ||   1218.51   |   pass   |     1.2x  |
+  |CPU avx:        |     ✔  |     |   |  |     |   327.698  |    pass  |      4.45x   ||
+  |CPU chunk-avx:    |      |  ✔   |  ✔  |        ||    284.75  |    pass  |     5.13x  | |
+  |CPU omp-avx:    |   ✔    |   |   ✔  |       ||    89.729   |   pass   |    16.27x  | |
+  |GPU:         |          |      |           |     ✔      | |86.954 | pass | 16.79x ||
+  |GPU constant_kernel:         |          |      |            |     ✔      | |77.04 | pass | 18.95x ||
+  |GPU constant_kernel_Tiling:         |               |      |      |     ✔    |   |74.927 | pass | 19.48x ||
+  |ARM A15:         |               |        |      |         |   ✔  | | pass ||4.2GFlops|
+
+* General settings:  
+  
+  * Size of Matrix: (4096, 4096)
+  * Size of Kernel: 5 x 5 
+  * CUDA: Block(32, 32)
