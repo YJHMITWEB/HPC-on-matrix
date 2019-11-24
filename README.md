@@ -35,7 +35,7 @@ The purpose of this project is to show how high performance computing, which is 
   * AVX SIMD parallel: 8\*float(32 bits)  
   * AVX parallel in chunk: 2 rows (depends on how many AVX registers on the machine)  
   * CUDA: Block(32, 32)
-## HPC-on-matrix: 3D Stencil computing
+## 3D Stencil computing
 * General Matrix Multiply:  
   * Main Entrance: Odessy.cpp
   
@@ -71,7 +71,7 @@ The purpose of this project is to show how high performance computing, which is 
    
    * This problem will happen again on NVIDIA GPU if trying to store 3D data on shared memory. A way to solve it is on above reference, and my code shows exactly how to do.
 
-## HPC-on-matrix: 2D Convolution
+## 2D Convolution
 * 2D Convolution:  
   * Main Entrance: Odessy.cpp
   
