@@ -8,8 +8,8 @@ The purpose of this project is to show how high performance computing, which is 
   * Windows 10  
   * VS2017 Release x64 (disable all auto-optimization)
   * Intel Core i7 4720HQ (4 cores, 8 threads, L3c = 6144 KB)  
-  * 8G memory, 1.6GHz  
-  * GTX 960M, 640 cu
+  * DDR3L 8G 1600MHz 
+  * Geforce GTX 960M, 640 cu
 * Implemented Matrix Multiply(MM):  
 
   |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    | CUDA |NEON|   Time(ms)      |       Validation   |      speed-up|  % of peak performance
@@ -43,8 +43,8 @@ The purpose of this project is to show how high performance computing, which is 
   * Windows 10  
   * VS2017 Release x64 (disable all auto-optimization)
   * Intel Core i7 4720HQ (4 cores, 8 threads, L3c = 6144 KB)  
-  * 8G memory, 1.6GHz  
-  * GTX 960M, 640 cu
+  * DDR3L 8G 1600MHz 
+  * Geforce GTX 960M, 640 cu
   
 * Implemented 3D Stencil computing:  
 
@@ -79,8 +79,8 @@ The purpose of this project is to show how high performance computing, which is 
   * Windows 10  
   * VS2017 Release x64 (disable all auto-optimization)
   * Intel Core i7 4720HQ (4 cores, 8 threads, L3c = 6144 KB)  
-  * 8G memory, 1.6GHz  
-  * GTX 960M, 640 cu
+  * DDR3L 8G 1600MHz 
+  * Geforce GTX 960M, 640 cu
   
 * Implemented 2D Convolution:  
 
