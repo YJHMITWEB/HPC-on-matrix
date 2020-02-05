@@ -3,7 +3,7 @@ The purpose of this project is to show how high performance computing, which is 
 ## Matrix Multiply
 * General Matrix Multiply:  
   * CPU Entrance: general_matrix_multiply/general_matrix_multiply/  
-  * GPU Entrance: GPN/../Odessy_G.cpp
+  * GPU Entrance: GeneralMatrixMultiply_GPN/GeneralMatrixMultiply_GPN/
 * Environment:  
   * Windows 10  
   * VS2017 Release x64 (disable all auto-optimization)
