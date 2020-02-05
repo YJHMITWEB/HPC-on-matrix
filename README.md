@@ -2,8 +2,8 @@
 The purpose of this project is to show how high performance computing, which is also perceived as parallel computing, distributed computing or heterogeneous computing, could accelerate very common algorithms in nowadays Artificial Intelligence. Contains matrix multiplying, 2D convolution computing, and 3D Stencil computing.
 ## Matrix Multiply
 * General Matrix Multiply:  
-  * Main Entrance: Odessy.cpp  
-  * GPU Main Entrance: GPN/../Odessy_G.cpp
+  * CPU Entrance: general_matrix_multiply/general_matrix_multiply/  
+  * GPU Entrance: GPN/../Odessy_G.cpp
 * Environment:  
   * Windows 10  
   * VS2017 Release x64 (disable all auto-optimization)
