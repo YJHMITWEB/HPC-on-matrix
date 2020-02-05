@@ -73,8 +73,8 @@ The purpose of this project is to show how high performance computing, which is 
 
 ## 2D Convolution
 * 2D Convolution:  
-  * Main Entrance: Odessy.cpp
-  
+  * CPU Entrance: 2D_Convolution/2D_Convolution/
+  * GPU Entrance: 2D_Convolution_GPU/2D_Convolution_GPU/
 * Environment:  
   * Windows 10  
   * VS2017 Release x64 (disable all auto-optimization)
