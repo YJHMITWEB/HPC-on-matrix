@@ -37,7 +37,7 @@ The purpose of this project is to show how high performance computing, which is 
   * CUDA: Block(32, 32)
 ## 3D Stencil computing
 * General Matrix Multiply:  
-  * Main Entrance: Odessy.cpp
+  * CPU/GPU Entrance: Stencil/Stencil/
   
 * Environment:  
   * Windows 10  
