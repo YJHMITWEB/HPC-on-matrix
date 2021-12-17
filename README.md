@@ -10,7 +10,7 @@ The purpose of this project is to show how high performance computing, which is 
 * Implemented GED:
 * 
   |  Methods        |    CHUNK     |     SSE/AVX    |   Time(ms)      |       Validation   |      speed-up|  % of peak performance
-  |-----------------|:-------------:|:-------------:|:--------------:|:--:|:----------------:|:--------------:|:--------------------:|:-----------:|:----------:|
+  |-----------------|:-------------:|:-------------:|:--------------:|:--------------------:|:-----------:|:----------:|
   |CPU sequential:  |              |                 |      20.2936  |        pass   |        1x  |  4.22  |
   |CPU chunk-sequential: |   ✔   |  ✔             |       2.50874   |         pass   |     8.09x  |  34.14  |
   
