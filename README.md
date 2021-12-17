@@ -5,7 +5,7 @@ The purpose of this project is to show how high performance computing, which is 
 * Environment
   * Windows 10
   * VS2022 Release x64
-  * AMD Ryzen 3500x (disable multiprocessing)
+  * AMD Ryzen 3500x (~4.0GHz, L1c = 64 KB, disable multiprocessing)
   * DDR4 16G 3000MHz
 * Implemented GED:
 * 
@@ -24,7 +24,7 @@ The purpose of this project is to show how high performance computing, which is 
 * Environment:  
   * Windows 10  
   * VS2017 Release x64 (disable all auto-optimization)
-  * Intel Core i7 4720HQ (4 cores, 8 threads, L3c = 6144 KB)  
+  * Intel Core i7 4720HQ (4 cores, 8 threads, L1c = 32 KB, L3c = 6144 KB)  
   * DDR3L 8G 1600MHz 
   * Geforce GTX 960M, 640 cu
 * Implemented Matrix Multiply(MM):  
