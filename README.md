@@ -1,5 +1,22 @@
 # HPC-on-matrix:
-The purpose of this project is to show how high performance computing, which is also perceived as parallel computing, distributed computing or heterogeneous computing, could accelerate very common algorithms in nowadays Artificial Intelligence. Contains matrix multiplying, 2D convolution computing, and 3D Stencil computing.
+The purpose of this project is to show how high performance computing, which is also perceived as parallel computing, distributed computing or heterogeneous computing, could accelerate very common algorithms in nowadays Artificial Intelligence. Contains matrix euclidean distance, matrix multiplying, 2D convolution computing, and 3D Stencil computing.
+
+## Matrix GEmm-based Euclidean Distance
+* Environment
+  * Windows 10
+  * VS2022 Release x64
+  * AMD Ryzen 3500x (disable multiprocessing)
+  * DDR4 16G 3000MHz
+* Implemented GED:
+* 
+  |  Methods        |    CHUNK     |     SSE/AVX    |   Time(ms)      |       Validation   |      speed-up|  % of peak performance
+  |-----------------|:-------------:|:-------------:|:--------------:|:--:|:----------------:|:--------------:|:--------------------:|:-----------:|:----------:|
+  |CPU sequential:  |              |                 |      20.2936  |        pass   |        1x  |  4.22  |
+  |CPU chunk-sequential: |   ✔   |  ✔             |       2.50874   |         pass   |     8.09x  |  34.14  |
+  
+* General settings:  
+  * Size of Matrix1: (1024, 1024), Matrix2: (1024, 25)  
+
 ## Matrix Multiply
 * General Matrix Multiply:  
   * CPU Entrance: general_matrix_multiply/general_matrix_multiply/  
@@ -14,8 +31,8 @@ The purpose of this project is to show how high performance computing, which is 
 
   |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    | CUDA |NEON|   Time(ms)      |       Validation   |      speed-up|  % of peak performance
   |-----------------|:-------------:|:-------------:|:--------------:|:--:|:----------------:|:--------------:|:--------------------:|:-----------:|:----------:|
-  |CPU sequential:      |       |    |     |     |  |  10757.1  |    pass   |        1x  | |
-  |CPU chunk-sequential:   |    |  ✔   |    |  ||   4464.14   |   pass   |     2.41x  |
+  |CPU serial:      |       |    |     |     |  |  10757.1  |    pass   |        1x  | |
+  |CPU chunk-serial:   |    |  ✔   |    |  ||   4464.14   |   pass   |     2.41x  |
   |CPU omp:        |     ✔  |     |   |  |     |   2307.25  |    pass  |      4.66x   ||
   |CPU chunk-omp:    |   ✔    |  ✔   |   |        ||    1487.28  |    pass  |     7.23x  | |
   |CPU chunk-avx:    |      | ✔   |   ✔  |       ||    978.398   |   pass   |    10.99x  | |
@@ -50,7 +67,7 @@ The purpose of this project is to show how high performance computing, which is 
 
 |  Methods          |   OpenMP        |   CUDA      | Time(ms)         |       Validation |      speed-up  | 
 |-----------------  |:---------------:|:-----------:|:----------------:|:----------------:|:--------------:|
-|CPU sequential:        |                 |             |11352            |  pass            | 1x             | 
+|CPU serial:        |                 |             |11352            |  pass            | 1x             | 
 |GPU:               |                 |     ✔       |70.47            |  pass            | 161.09x             |
 
 * General settings:  
@@ -86,8 +103,8 @@ The purpose of this project is to show how high performance computing, which is 
 
   |  Methods        |   OpenMP    |   CHUNK     |     SSE/AVX    | CUDA |NEON|   Time(ms)      |       Validation   |      speed-up|  % of peak performance
   |-----------------|:-------------:|:-------------:|:--------------:|:--:|:----------------:|:--------------:|:--------------------:|:-----------:|:----------:|
-  |CPU sequential:      |       |    |     |     |  |  1459.82  |    pass   |        1x  | |
-  |CPU sequential-loop-unroll:   |    |     |    |  ||   1218.51   |   pass   |     1.2x  |
+  |CPU serial:      |       |    |     |     |  |  1459.82  |    pass   |        1x  | |
+  |CPU serial-loop-unroll:   |    |     |    |  ||   1218.51   |   pass   |     1.2x  |
   |CPU avx:        |     ✔  |     |   |  |     |   327.698  |    pass  |      4.45x   ||
   |CPU chunk-avx:    |      |  ✔   |  ✔  |        ||    284.75  |    pass  |     5.13x  | |
   |CPU omp-avx:    |   ✔    |   |   ✔  |       ||    89.729   |   pass   |    16.27x  | |
