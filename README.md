@@ -17,10 +17,10 @@ The purpose of this project is to show how high performance computing, which is 
 * General settings:  
   * Size of Matrix1: (M, K)=(1024, 1024), Matrix2: (K, N)=(1024, 25)  
 
-* Percent of peak performance on different M
+* GFLOPs of peak performance on different M
 <img src="https://github.com/YJHMITWEB/HPC-on-matrix/blob/8f9eaf397214ee2d98a257b63f780935559034fb/demo/Performance_with_fixed_k_and_n.png" width="500"/>
 
-* Percent of peak performance on different K
+* GFLOPs of peak performance on different K
 <img src="https://github.com/YJHMITWEB/HPC-on-matrix/blob/8f9eaf397214ee2d98a257b63f780935559034fb/demo/Performance_with_fixed_m_and_n.png" width="500"/>
 
 ## Matrix Multiply
