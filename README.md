@@ -17,7 +17,7 @@ The purpose of this project is to show how high performance computing, which is 
 * General settings:  
   * Size of Matrix1: (M, K)=(1024, 1024), Matrix2: (K, N)=(1024, 25)  
 
-* GFLOPs of peak performance on different settings
+* GFLOPs of single core peak performance on different sizes of matrix:
 <img src="https://github.com/YJHMITWEB/HPC-on-matrix/blob/9aac28f3478410015edcc8cd45a992c5e144aa01/demo/GFLOPs_to_Peak_Performance.png" width="1000"/>
 
 ## Matrix Multiply
