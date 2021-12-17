@@ -11,8 +11,8 @@ The purpose of this project is to show how high performance computing, which is 
 * 
   |  Methods        |    CHUNK     |     SSE/AVX    |   Time(ms)      |       Validation   |      speed-up|  % of peak performance
   |-----------------|:-------------:|:-------------:|:--------------:|:--------------------:|:-----------:|:----------:|
-  |CPU serial:  |              |                 |      20.2936  |        pass   |        1x  |  4.22  |
-  |CPU chunk-avx: |   ✔   |  ✔             |       2.50874   |         pass   |     8.09x  |  34.14  |
+  |CPU serial:  |              |                 |      20.29  |        pass   |        1x  |  4.22  |
+  |CPU chunk-avx: |   ✔   |  ✔             |       2.51   |         pass   |     8.09x  |  34.14  |
   
 * General settings:  
   * Size of Matrix1: (1024, 1024), Matrix2: (1024, 25)  
