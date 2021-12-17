@@ -8,7 +8,7 @@ The purpose of this project is to show how high performance computing, which is 
   * AMD Ryzen 3500x (~4.0GHz, L1c = 64 KB, disable multiprocessing)
   * DDR4 16G 3000MHz
 * Implemented GED:
-* 
+ 
   |  Methods        |    CHUNK     |     SSE/AVX    |   Time(ms)      |       Validation   |      speed-up|  % of peak performance
   |-----------------|:-------------:|:-------------:|:--------------:|:--------------------:|:-----------:|:----------:|
   |CPU serial:  |              |                 |      20.29  |        pass   |        1x  |  4.22  |
@@ -16,6 +16,12 @@ The purpose of this project is to show how high performance computing, which is 
   
 * General settings:  
   * Size of Matrix1: (M, K)=(1024, 1024), Matrix2: (K, N)=(1024, 25)  
+
+* Percent of peak performance on different M
+![Compare % of peak performance on different M](demo/Performance_with_fixed_k_and_n.png) 
+
+* Percent of peak performance on different K
+![Compare % of peak performance on different K](demo/Performance_with_fixed_m_and_n.png) 
 
 ## Matrix Multiply
 * General Matrix Multiply:  
