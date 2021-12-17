@@ -18,10 +18,10 @@ The purpose of this project is to show how high performance computing, which is 
   * Size of Matrix1: (M, K)=(1024, 1024), Matrix2: (K, N)=(1024, 25)  
 
 * Percent of peak performance on different M
-<img src="https://github.com/YJHMITWEB/HPC-on-matrix/demo/Performance_with_fixed_k_and_n.png" width="300">
+<img src="https://github.com/YJHMITWEB/HPC-on-matrix/demo/Performance_with_fixed_k_and_n.png" width="300"/>
 
 * Percent of peak performance on different K
-<img src="https://github.com/YJHMITWEB/HPC-on-matrix/demo/Performance_with_fixed_m_and_n.png" width="300">
+<img src="https://github.com/YJHMITWEB/HPC-on-matrix/demo/Performance_with_fixed_m_and_n.png" width="300"/>
 
 ## Matrix Multiply
 * General Matrix Multiply:  
