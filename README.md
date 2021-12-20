@@ -1,5 +1,5 @@
 # HPC-on-matrix:
-The purpose of this project is to show how high performance computing, which is also perceived as parallel computing, distributed computing or heterogeneous computing, could accelerate very common algorithms in nowadays Artificial Intelligence. Contains matrix euclidean distance, matrix multiplying, 2D convolution computing, and 3D Stencil computing.
+The purpose of this project is to show how high performance computing (or, parallel computing, heterogeneous computing), could accelerate common algorithms in matrix operations as well as some artificial intelligence techniques. Contains demos of matrix euclidean distance, matrix multiplying, 2D convolution computing, and 3D Stencil computing.
 
 ## Matrix GEmm-based Euclidean Distance
 * Environment
